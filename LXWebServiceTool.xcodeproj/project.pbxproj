@@ -33,6 +33,7 @@
 		2374FDB11CBE25950004FF4E /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2374FD9B1CBE25950004FF4E /* UIRefreshControl+AFNetworking.m */; };
 		2374FDB21CBE25950004FF4E /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2374FD9D1CBE25950004FF4E /* UIWebView+AFNetworking.m */; };
 		2374FDB31CBE25950004FF4E /* LXWebServiceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2374FD9F1CBE25950004FF4E /* LXWebServiceTool.m */; };
+		23E3C0C21CE8BDC9005987E7 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E3C0C11CE8BDC9005987E7 /* XMLDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,8 @@
 		2374FD9D1CBE25950004FF4E /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		2374FD9E1CBE25950004FF4E /* LXWebServiceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXWebServiceTool.h; sourceTree = "<group>"; };
 		2374FD9F1CBE25950004FF4E /* LXWebServiceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXWebServiceTool.m; sourceTree = "<group>"; };
+		23E3C0C01CE8BDC9005987E7 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		23E3C0C11CE8BDC9005987E7 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,7 @@
 		2374FD731CBE25950004FF4E /* WebServiceTool */ = {
 			isa = PBXGroup;
 			children = (
+				23E3C0BF1CE8BDC9005987E7 /* XMLDictionary */,
 				2374FD741CBE25950004FF4E /* AFNetworking */,
 				2374FD9E1CBE25950004FF4E /* LXWebServiceTool.h */,
 				2374FD9F1CBE25950004FF4E /* LXWebServiceTool.m */,
@@ -211,6 +215,15 @@
 				2374FD9D1CBE25950004FF4E /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		23E3C0BF1CE8BDC9005987E7 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				23E3C0C01CE8BDC9005987E7 /* XMLDictionary.h */,
+				23E3C0C11CE8BDC9005987E7 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 				2374FD241CBE17B30004FF4E /* ViewController.m in Sources */,
 				2374FDA11CBE25950004FF4E /* AFHTTPRequestOperationManager.m in Sources */,
 				2374FDA31CBE25950004FF4E /* AFNetworkReachabilityManager.m in Sources */,
+				23E3C0C21CE8BDC9005987E7 /* XMLDictionary.m in Sources */,
 				2374FDAA1CBE25950004FF4E /* README.md in Sources */,
 				2374FDAF1CBE25950004FF4E /* UIImageView+AFNetworking.m in Sources */,
 				2374FDA71CBE25950004FF4E /* AFURLResponseSerialization.m in Sources */,
