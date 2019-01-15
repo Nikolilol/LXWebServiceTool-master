@@ -7,16 +7,16 @@ Note: This fold includes AFNetworking 2.x and XMLDictionary;
 
 ```
 #import "LXWebServiceTool.h"
-    NSArray *parArray = @[@"sText", _titleLabel.text];
-    [LXWebServiceTool requestWithNameSpace:@"http://webxml.com.cn/" SoapMthod:@"toTraditionalChinese" parArray:parArray webServiceUrl:[NSURL URLWithString: @"http://www.webxml.com.cn/WebServices/TraditionalSimplifiedWebService.asmx"] success:^(NSString *methodName, id responseObject) {
-      //This block will return methodName & responseObject
-        NSLog(@"methodName = %@\nresponseObjecct = %@", methodName, responseObject);
-        _titleLabel.text = responseObject;
-    } errorBlock:^(NSString *methodName, NSError *error) {
-      //This block will return methodName & error
-        NSLog(@"methodName = %@\nerror = %@", methodName, error);
-        _titleLabel.text = [NSString stringWithFormat:@"methodName = %@\nerror = %@", methodName, error];
-    }];
+NSArray *parArray = @[@"sText", _titleLabel.text];
+[LXWebServiceTool requestWithNameSpace:@"http://webxml.com.cn/" SoapMthod:@"toTraditionalChinese" parArray:parArray webServiceUrl:[NSURL URLWithString: @"http://www.webxml.com.cn/WebServices/TraditionalSimplifiedWebService.asmx"] success:^(NSString *methodName, id responseObject) {
+  //This block will return methodName & responseObject
+    NSLog(@"methodName = %@\nresponseObjecct = %@", methodName, responseObject);
+    _titleLabel.text = responseObject;
+} errorBlock:^(NSString *methodName, NSError *error) {
+  //This block will return methodName & error
+    NSLog(@"methodName = %@\nerror = %@", methodName, error);
+    _titleLabel.text = [NSString stringWithFormat:@"methodName = %@\nerror = %@", methodName, error];
+}];
 ```
 
 # LXWebServiceTool
